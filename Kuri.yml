@@ -1,0 +1,20 @@
+DefaultTemplateDirectoryPath: ./KuriTemplate/
+ProjectRootPath: ./
+ProjectFileName: SampleQiitaVIPER.xcodeproj
+GenerateRootPath: ./SampleQiitaVIPER/
+Target: SampleQiitaVIPER
+ShouldRemoveLayerNameFromDirectory: false
+
+InteractorTests:
+  ProjectRootPath: ./
+  ProjectFileName: SampleQiitaVIPER.xcodeproj
+  GenerateRootPath: ./SampleQiitaVIPERTests/
+  Target: SampleQiitaVIPERTests
+  ShouldRemoveLayerNameFromDirectory: true
+
+PresenterTests:
+  ProjectRootPath: ./
+  ProjectFileName: SampleQiitaVIPER.xcodeproj
+  GenerateRootPath: ./SampleQiitaVIPERTests/
+  Target: SampleQiitaVIPERTests
+  ShouldRemoveLayerNameFromDirectory: true
