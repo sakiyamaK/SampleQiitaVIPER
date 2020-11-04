@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,11 @@
 		B63EF238254ECC4A00919DCA /* SampleQiitaVIPERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63EF237254ECC4A00919DCA /* SampleQiitaVIPERUITests.swift */; };
 		B63EF283254EF9E100919DCA /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63EF282254EF9E100919DCA /* AppRouter.swift */; };
 		B63EF28B254EF9F500919DCA /* AppPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63EF28A254EF9F500919DCA /* AppPresenter.swift */; };
+		B6CC81232551B0DC00A08B90 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6CC81222551B0DC00A08B90 /* Login.storyboard */; };
+		B6CC81282552371200A08B90 /* qiita_access_token.json in Resources */ = {isa = PBXBuildFile; fileRef = B6CC81272552371200A08B90 /* qiita_access_token.json */; };
+		B6CC812E25523A6700A08B90 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CC812D25523A6700A08B90 /* API.swift */; };
+		B6CC813725523C6B00A08B90 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B6CC813625523C6B00A08B90 /* Alamofire */; };
+		B6CC81432552B91900A08B90 /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CC81422552B91900A08B90 /* UserDefaults+.swift */; };
 		N9S0AU91HR32XYRVMGD4BS9A /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = T14ZOK6H1M6W8OSOVT17R6Q7 /* LoginPresenter.swift */; };
 		PJBXWG51QVTTBIUZTSTIPB2O /* RootViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = IPI9GOWIMC5YP3H9I02IVV8E /* RootViewPresenterTests.swift */; };
 		R495PMK1IGS6ZUH5XGM7677M /* LoginViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = G47CWHVBIO90EKH2Q3RKBJ35 /* LoginViewPresenterTests.swift */; };
@@ -56,6 +61,10 @@
 		B63EF239254ECC4A00919DCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B63EF282254EF9E100919DCA /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		B63EF28A254EF9F500919DCA /* AppPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPresenter.swift; sourceTree = "<group>"; };
+		B6CC81222551B0DC00A08B90 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		B6CC81272552371200A08B90 /* qiita_access_token.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = qiita_access_token.json; sourceTree = "<group>"; };
+		B6CC812D25523A6700A08B90 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B6CC81422552B91900A08B90 /* UserDefaults+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+.swift"; sourceTree = "<group>"; };
 		E5UNVRXY50TY9BZVEA4043MR /* RootInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootInteractorTests.swift; sourceTree = "<group>"; };
 		G47CWHVBIO90EKH2Q3RKBJ35 /* LoginViewPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewPresenterTests.swift; sourceTree = "<group>"; };
 		IPI9GOWIMC5YP3H9I02IVV8E /* RootViewPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewPresenterTests.swift; sourceTree = "<group>"; };
@@ -70,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6CC813725523C6B00A08B90 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +123,9 @@
 		B63EF214254ECC4800919DCA /* SampleQiitaVIPER */ = {
 			isa = PBXGroup;
 			children = (
+				B6CC81412552B90B00A08B90 /* Extension */,
+				B6CC812C25523A5000A08B90 /* Utility */,
+				B6CC81272552371200A08B90 /* qiita_access_token.json */,
 				B63EF281254EF9CB00919DCA /* Application */,
 				B63EF215254ECC4800919DCA /* AppDelegate.swift */,
 				B63EF21E254ECC4A00919DCA /* Assets.xcassets */,
@@ -150,6 +163,30 @@
 				B63EF28A254EF9F500919DCA /* AppPresenter.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		B6CC812C25523A5000A08B90 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				B6CC814A2552BFB100A08B90 /* API */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		B6CC81412552B90B00A08B90 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B6CC81422552B91900A08B90 /* UserDefaults+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B6CC814A2552BFB100A08B90 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B6CC812D25523A6700A08B90 /* API.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		IRI7ZANM4VN44VSBCFKP4HTA /* Root */ = {
@@ -209,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				VEQH2YTMKF9141S5HI4PEBSS /* LoginViewController.swift */,
+				B6CC81222551B0DC00A08B90 /* Login.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -229,6 +267,9 @@
 			dependencies = (
 			);
 			name = SampleQiitaVIPER;
+			packageProductDependencies = (
+				B6CC813625523C6B00A08B90 /* Alamofire */,
+			);
 			productName = SampleQiitaVIPER;
 			productReference = B63EF212254ECC4800919DCA /* SampleQiitaVIPER.app */;
 			productType = "com.apple.product-type.application";
@@ -300,6 +341,9 @@
 				Base,
 			);
 			mainGroup = B63EF209254ECC4800919DCA;
+			packageReferences = (
+				B6CC813525523C6B00A08B90 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = B63EF213254ECC4800919DCA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -316,8 +360,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6CC81282552371200A08B90 /* qiita_access_token.json in Resources */,
 				B63EF222254ECC4A00919DCA /* LaunchScreen.storyboard in Resources */,
 				B63EF21F254ECC4A00919DCA /* Assets.xcassets in Resources */,
+				B6CC81232551B0DC00A08B90 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,11 +389,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B63EF216254ECC4800919DCA /* AppDelegate.swift in Sources */,
+				B6CC81432552B91900A08B90 /* UserDefaults+.swift in Sources */,
 				N9S0AU91HR32XYRVMGD4BS9A /* LoginPresenter.swift in Sources */,
 				B63EF283254EF9E100919DCA /* AppRouter.swift in Sources */,
 				U8CQ0YI1NI390G1CCSDY1AAS /* LoginViewController.swift in Sources */,
 				V8MKNBTZOGZDA05RA00KLXPP /* LoginInteractor.swift in Sources */,
 				76EQ0JN3AWUFU1L1FHLPPFT0 /* LoginRouter.swift in Sources */,
+				B6CC812E25523A6700A08B90 /* API.swift in Sources */,
 				B63EF28B254EF9F500919DCA /* AppPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,7 +574,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = sakiyamaK.SampleQiitaVIPER;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sakiyamaK.SampleQiitaVIPER;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -544,7 +592,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = sakiyamaK.SampleQiitaVIPER;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sakiyamaK.SampleQiitaVIPER;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -671,6 +719,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B6CC813525523C6B00A08B90 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B6CC813625523C6B00A08B90 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B6CC813525523C6B00A08B90 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B63EF20A254ECC4800919DCA /* Project object */;
 }

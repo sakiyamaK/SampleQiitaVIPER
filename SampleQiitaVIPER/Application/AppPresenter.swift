@@ -21,6 +21,6 @@ final class AppPresenter {
 
 extension AppPresenter: AppPresentation {
   func didFinishLaunch() {
-    router.showLoginView()
+    router.showStartView()
   }
 }

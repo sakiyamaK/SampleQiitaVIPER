@@ -8,7 +8,7 @@
 import UIKit
 
 protocol AppWireframe: AnyObject {
-  func showLoginView()
+  func showStartView()
 }
 
 final class AppRouter {
@@ -27,7 +27,7 @@ final class AppRouter {
 }
 
 extension AppRouter: AppWireframe {
-  func showLoginView() {
+  func showStartView() {
     let viewController = LoginRouter.assembleModules()
     let navigationController = UINavigationController(rootViewController: viewController)
 

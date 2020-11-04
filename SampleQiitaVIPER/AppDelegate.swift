@@ -17,5 +17,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     appPresenter.didFinishLaunch()
     return true
   }
+
+  func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+    guard let queryItems = URLComponents(string: url.absoluteString)?.queryItems,
+          let code = queryItems.first(where: {$0.name == "code"})?.value,
+          let getState = queryItems.first(where: {$0.name == "state"})?.value,
+          getState == API.shared.qiitState
+    else {
+      return true
+    }
+    API.shared.postAccessToken(code: code)
+    return true
+  }
 }
 

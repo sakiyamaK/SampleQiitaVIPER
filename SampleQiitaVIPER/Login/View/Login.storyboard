@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7kH-bH-kAc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="a4j-i0-hyf">
+            <objects>
+                <viewController id="7kH-bH-kAc" customClass="LoginViewController" customModule="SampleQiitaVIPER" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Ti-UZ-ndm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DcT-kU-pWk">
+                                <rect key="frame" x="169.5" y="433" width="75" height="30"/>
+                                <state key="normal" title="QiitaOAuth"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iIc-nI-Q9t"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DcT-kU-pWk" firstAttribute="centerY" secondItem="8Ti-UZ-ndm" secondAttribute="centerY" id="3bH-cV-8MK"/>
+                            <constraint firstItem="DcT-kU-pWk" firstAttribute="centerX" secondItem="8Ti-UZ-ndm" secondAttribute="centerX" id="dZm-Xe-tGO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="qiitaOAuthButton" destination="DcT-kU-pWk" id="mKO-tz-QH5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yDs-G3-rMw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="178" y="96"/>
+        </scene>
+    </scenes>
+</document>
