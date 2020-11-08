@@ -23,16 +23,15 @@ final class LoginViewController: UIViewController {
     }
   }
 
-  static func makeFromStoryboard() -> LoginViewController? {
+  static func makeFromStoryboard() -> LoginViewController {
     guard let vc = UIStoryboard(name: "Login", bundle: nil).instantiateInitialViewController() as? LoginViewController else {
-      return nil
+      fatalError()
     }
     return vc
   }
   
   override func viewDidLoad() {
     super.viewDidLoad()
-
     presenter.viewDidLoad()
   }
 }
@@ -44,11 +43,6 @@ extension LoginViewController: LoginView {
 
 private extension LoginViewController {
   @objc func tapOAuthButton(_ sender: UIButton) {
-    print(UserDefaults.standard.qiitaAccessToken)
-    guard UserDefaults.standard.qiitaAccessToken.count == 0 && UIApplication.shared.canOpenURL(API.shared.oAuthURL) else {
-      return
-    }
-
-    UIApplication.shared.open(API.shared.oAuthURL, options: [:], completionHandler: nil)
+    presenter.tapLoginButton()
   }
 }

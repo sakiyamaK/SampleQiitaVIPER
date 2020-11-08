@@ -9,6 +9,7 @@
 import UIKit
 
 protocol LoginWireframe: AnyObject {
+  func showWeb(url: URL?)
 
 }
 
@@ -20,10 +21,12 @@ final class LoginRouter {
   }
 
   static func assembleModules() -> UIViewController {
-    let view = LoginViewController.makeFromStoryboard()!
+    let view = LoginViewController.makeFromStoryboard()
     let router = LoginRouter(viewController: view)
+    let interactor = LoginInteractor()
     let presenter = LoginPresenter(
       view: view,
+      interactor: interactor,
       router: router
     )
 
@@ -34,5 +37,11 @@ final class LoginRouter {
 }
 
 extension LoginRouter: LoginWireframe {
-
+  func showWeb(url: URL?) {
+    guard
+      let _url = url,
+      UIApplication.shared.canOpenURL(_url)
+      else { return }
+    UIApplication.shared.open(_url, options: [:], completionHandler: nil)
+  }
 }

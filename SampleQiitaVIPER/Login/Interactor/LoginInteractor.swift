@@ -9,13 +9,16 @@
 import Foundation
 
 protocol LoginUsecase {
-    
+  var loginURL: URL? { get }
 }
 
 final class LoginInteractor {
-    
+  let api: APIClient
+  init(api: APIClient = API.shared) {
+    self.api = api
+  }
 }
 
 extension LoginInteractor: LoginUsecase {
-    
+  var loginURL: URL? { api.oAuthURL }
 }

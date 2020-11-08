@@ -9,25 +9,32 @@
 import Foundation
 
 protocol LoginPresentation: AnyObject {
-    func viewDidLoad()    
+  func viewDidLoad()
+  func tapLoginButton()
 }
 
 final class LoginPresenter {
-    private weak var view: LoginView?
-    private let router: LoginWireframe
-    
-    init(
-        view: LoginView,
-        router: LoginWireframe
-    ) {
-        self.view = view
-        self.router = router
-    }
+  private weak var view: LoginView?
+  private let router: LoginWireframe
+  private let interactor: LoginUsecase
+
+  init(
+    view: LoginView,
+    interactor: LoginUsecase,
+    router: LoginWireframe
+  ) {
+    self.view = view
+    self.interactor = interactor
+    self.router = router
+  }
 }
 
 extension LoginPresenter: LoginPresentation {
-    func viewDidLoad() {
-        
-    }
+  func viewDidLoad() {
+  }
+
+  func tapLoginButton() {
+    router.showWeb(url: interactor.loginURL)
+  }
 }
 

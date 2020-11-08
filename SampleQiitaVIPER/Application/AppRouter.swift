@@ -9,6 +9,7 @@ import UIKit
 
 protocol AppWireframe: AnyObject {
   func showStartView()
+  func showItemView()
 }
 
 final class AppRouter {
@@ -20,18 +21,24 @@ final class AppRouter {
 
   static func assembleModules(window: UIWindow) -> AppPresentation {
     let router = AppRouter(window: window)
-    let presenter = AppPresenter(router: router)
+    let interactor = AppInteractor()
+    let presenter = AppPresenter(router: router, interactor: interactor)
 
     return presenter
   }
 }
 
 extension AppRouter: AppWireframe {
+  func showItemView() {
+    let viewController = ItemsRouter.assembleModules()
+    let navigationController = UINavigationController(rootViewController: viewController)
+    window.rootViewController = navigationController
+    window.makeKeyAndVisible()
+
+  }
   func showStartView() {
     let viewController = LoginRouter.assembleModules()
-    let navigationController = UINavigationController(rootViewController: viewController)
-
-    window.rootViewController = navigationController
+    window.rootViewController = viewController
     window.makeKeyAndVisible()
   }
 }

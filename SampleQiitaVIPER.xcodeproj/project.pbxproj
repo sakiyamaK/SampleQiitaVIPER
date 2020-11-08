@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DKUHFQC4KADKR05OLO9Z6GA /* ItemsViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEG80UYZC3CV50IU5TX5JVTF /* ItemsViewPresenterTests.swift */; };
 		76EQ0JN3AWUFU1L1FHLPPFT0 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = TS3KYWW24NGZ1Y9I6XW22K0N /* LoginRouter.swift */; };
+		B62C919C2557E76600821406 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B62C919B2557E76600821406 /* Alamofire */; };
+		B62C91AA2557F88800821406 /* Items.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62C91A92557F88800821406 /* Items.storyboard */; };
+		B62C91B02557F9E800821406 /* QiitaItemEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62C91AF2557F9E800821406 /* QiitaItemEntity.swift */; };
 		B63EF216254ECC4800919DCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63EF215254ECC4800919DCA /* AppDelegate.swift */; };
 		B63EF21F254ECC4A00919DCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63EF21E254ECC4A00919DCA /* Assets.xcassets */; };
 		B63EF222254ECC4A00919DCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63EF220254ECC4A00919DCA /* LaunchScreen.storyboard */; };
@@ -16,16 +20,21 @@
 		B63EF283254EF9E100919DCA /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63EF282254EF9E100919DCA /* AppRouter.swift */; };
 		B63EF28B254EF9F500919DCA /* AppPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63EF28A254EF9F500919DCA /* AppPresenter.swift */; };
 		B6CC81232551B0DC00A08B90 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6CC81222551B0DC00A08B90 /* Login.storyboard */; };
-		B6CC81282552371200A08B90 /* qiita_access_token.json in Resources */ = {isa = PBXBuildFile; fileRef = B6CC81272552371200A08B90 /* qiita_access_token.json */; };
 		B6CC812E25523A6700A08B90 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CC812D25523A6700A08B90 /* API.swift */; };
-		B6CC813725523C6B00A08B90 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B6CC813625523C6B00A08B90 /* Alamofire */; };
 		B6CC81432552B91900A08B90 /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CC81422552B91900A08B90 /* UserDefaults+.swift */; };
+		B6CC81532552FB9000A08B90 /* AccessTokenEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CC81522552FB9000A08B90 /* AccessTokenEntity.swift */; };
+		B6CC81612553073900A08B90 /* AppInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CC81602553073900A08B90 /* AppInteractor.swift */; };
+		HSHWFSYZXSB661R8EWMPQEYA /* ItemsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = L5YS5I3578OVRUHCXY95I1RG /* ItemsPresenter.swift */; };
+		KM5MRR5NLYZOBSPD2QAUIYYL /* ItemsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = UHZT98F0PQ4GW6UFJEGFAPWJ /* ItemsInteractorTests.swift */; };
 		N9S0AU91HR32XYRVMGD4BS9A /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = T14ZOK6H1M6W8OSOVT17R6Q7 /* LoginPresenter.swift */; };
+		NIP67ZDWTINICHUAZ7C2L87W /* ItemsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = PDKCHLCDUWY86DNYKKXBOR1G /* ItemsInteractor.swift */; };
 		PJBXWG51QVTTBIUZTSTIPB2O /* RootViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = IPI9GOWIMC5YP3H9I02IVV8E /* RootViewPresenterTests.swift */; };
 		R495PMK1IGS6ZUH5XGM7677M /* LoginViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = G47CWHVBIO90EKH2Q3RKBJ35 /* LoginViewPresenterTests.swift */; };
 		SARQ3RXF01UDNH69O36YJCZT /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = YCVWVZKQ5399VRUXYI68SDLV /* LoginInteractorTests.swift */; };
+		TO9GNAFF2ZPTPGDDLYBWW1ZJ /* ItemsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = U55UR0JN84LO9DX8SYG86NY8 /* ItemsRouter.swift */; };
 		U8CQ0YI1NI390G1CCSDY1AAS /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = VEQH2YTMKF9141S5HI4PEBSS /* LoginViewController.swift */; };
 		V8MKNBTZOGZDA05RA00KLXPP /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6HH3RELP35HLQ31K6GN8VBWI /* LoginInteractor.swift */; };
+		VM44NS6FJBWXZ0AKQV0EN3C0 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = YIKFXC2V7RMA0OEUAODLXW59 /* ItemsViewController.swift */; };
 		Z0AWEKYSX2X1UA5IZLA2UW4V /* RootInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5UNVRXY50TY9BZVEA4043MR /* RootInteractorTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +57,8 @@
 
 /* Begin PBXFileReference section */
 		6HH3RELP35HLQ31K6GN8VBWI /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		B62C91A92557F88800821406 /* Items.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Items.storyboard; sourceTree = "<group>"; };
+		B62C91AF2557F9E800821406 /* QiitaItemEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaItemEntity.swift; sourceTree = "<group>"; };
 		B63EF212254ECC4800919DCA /* SampleQiitaVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleQiitaVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63EF215254ECC4800919DCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B63EF21E254ECC4A00919DCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,16 +73,23 @@
 		B63EF282254EF9E100919DCA /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		B63EF28A254EF9F500919DCA /* AppPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPresenter.swift; sourceTree = "<group>"; };
 		B6CC81222551B0DC00A08B90 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		B6CC81272552371200A08B90 /* qiita_access_token.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = qiita_access_token.json; sourceTree = "<group>"; };
 		B6CC812D25523A6700A08B90 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		B6CC81422552B91900A08B90 /* UserDefaults+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+.swift"; sourceTree = "<group>"; };
+		B6CC81522552FB9000A08B90 /* AccessTokenEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenEntity.swift; sourceTree = "<group>"; };
+		B6CC81602553073900A08B90 /* AppInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInteractor.swift; sourceTree = "<group>"; };
+		DEG80UYZC3CV50IU5TX5JVTF /* ItemsViewPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewPresenterTests.swift; sourceTree = "<group>"; };
 		E5UNVRXY50TY9BZVEA4043MR /* RootInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootInteractorTests.swift; sourceTree = "<group>"; };
 		G47CWHVBIO90EKH2Q3RKBJ35 /* LoginViewPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewPresenterTests.swift; sourceTree = "<group>"; };
 		IPI9GOWIMC5YP3H9I02IVV8E /* RootViewPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewPresenterTests.swift; sourceTree = "<group>"; };
+		L5YS5I3578OVRUHCXY95I1RG /* ItemsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsPresenter.swift; sourceTree = "<group>"; };
+		PDKCHLCDUWY86DNYKKXBOR1G /* ItemsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsInteractor.swift; sourceTree = "<group>"; };
 		T14ZOK6H1M6W8OSOVT17R6Q7 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		TS3KYWW24NGZ1Y9I6XW22K0N /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		U55UR0JN84LO9DX8SYG86NY8 /* ItemsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsRouter.swift; sourceTree = "<group>"; };
+		UHZT98F0PQ4GW6UFJEGFAPWJ /* ItemsInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsInteractorTests.swift; sourceTree = "<group>"; };
 		VEQH2YTMKF9141S5HI4PEBSS /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		YCVWVZKQ5399VRUXYI68SDLV /* LoginInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
+		YIKFXC2V7RMA0OEUAODLXW59 /* ItemsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6CC813725523C6B00A08B90 /* Alamofire in Frameworks */,
+				B62C919C2557E76600821406 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +118,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3XB1V6NZ39A2QHQOLCJJGFU5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				YIKFXC2V7RMA0OEUAODLXW59 /* ItemsViewController.swift */,
+				B62C91A92557F88800821406 /* Items.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62XVG2B457NWMR3HXRSWLB7A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				L5YS5I3578OVRUHCXY95I1RG /* ItemsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AM68Y7ETVGMDPYHKF57K7LD4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				PDKCHLCDUWY86DNYKKXBOR1G /* ItemsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		B63EF209254ECC4800919DCA = {
 			isa = PBXGroup;
 			children = (
@@ -123,15 +166,16 @@
 		B63EF214254ECC4800919DCA /* SampleQiitaVIPER */ = {
 			isa = PBXGroup;
 			children = (
+				B6CC81512552FB6E00A08B90 /* Entity */,
 				B6CC81412552B90B00A08B90 /* Extension */,
 				B6CC812C25523A5000A08B90 /* Utility */,
-				B6CC81272552371200A08B90 /* qiita_access_token.json */,
 				B63EF281254EF9CB00919DCA /* Application */,
 				B63EF215254ECC4800919DCA /* AppDelegate.swift */,
 				B63EF21E254ECC4A00919DCA /* Assets.xcassets */,
 				B63EF220254ECC4A00919DCA /* LaunchScreen.storyboard */,
 				B63EF223254ECC4A00919DCA /* Info.plist */,
 				XZGODYR8Z2F1QEPQFYCFH6BA /* Login */,
+				PYZIXODY7YDYXC2X278L0UOW /* Items */,
 			);
 			path = SampleQiitaVIPER;
 			sourceTree = "<group>";
@@ -143,6 +187,7 @@
 				B63EF22E254ECC4A00919DCA /* Info.plist */,
 				IRI7ZANM4VN44VSBCFKP4HTA /* Root */,
 				P9A364NVZFTM0UNAOPAPZKUP /* Login */,
+				CUUGT80KYKKWKEL61N3AOIW2 /* Items */,
 			);
 			path = SampleQiitaVIPERTests;
 			sourceTree = "<group>";
@@ -161,6 +206,7 @@
 			children = (
 				B63EF282254EF9E100919DCA /* AppRouter.swift */,
 				B63EF28A254EF9F500919DCA /* AppPresenter.swift */,
+				B6CC81602553073900A08B90 /* AppInteractor.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -189,6 +235,32 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		B6CC81512552FB6E00A08B90 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				B6CC81522552FB9000A08B90 /* AccessTokenEntity.swift */,
+				B62C91AF2557F9E800821406 /* QiitaItemEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		CUUGT80KYKKWKEL61N3AOIW2 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				UHZT98F0PQ4GW6UFJEGFAPWJ /* ItemsInteractorTests.swift */,
+				DEG80UYZC3CV50IU5TX5JVTF /* ItemsViewPresenterTests.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		ES19SN214E8DXE9NMHO2MCQK /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				U55UR0JN84LO9DX8SYG86NY8 /* ItemsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		IRI7ZANM4VN44VSBCFKP4HTA /* Root */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +285,17 @@
 				G47CWHVBIO90EKH2Q3RKBJ35 /* LoginViewPresenterTests.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		PYZIXODY7YDYXC2X278L0UOW /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				62XVG2B457NWMR3HXRSWLB7A /* Presenter */,
+				3XB1V6NZ39A2QHQOLCJJGFU5 /* View */,
+				AM68Y7ETVGMDPYHKF57K7LD4 /* Interactor */,
+				ES19SN214E8DXE9NMHO2MCQK /* Router */,
+			);
+			path = Items;
 			sourceTree = "<group>";
 		};
 		S2P336JP6U4CEMNZ63LWHYGW /* Presenter */ = {
@@ -268,7 +351,7 @@
 			);
 			name = SampleQiitaVIPER;
 			packageProductDependencies = (
-				B6CC813625523C6B00A08B90 /* Alamofire */,
+				B62C919B2557E76600821406 /* Alamofire */,
 			);
 			productName = SampleQiitaVIPER;
 			productReference = B63EF212254ECC4800919DCA /* SampleQiitaVIPER.app */;
@@ -342,7 +425,7 @@
 			);
 			mainGroup = B63EF209254ECC4800919DCA;
 			packageReferences = (
-				B6CC813525523C6B00A08B90 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				B62C919A2557E76500821406 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = B63EF213254ECC4800919DCA /* Products */;
 			projectDirPath = "";
@@ -360,8 +443,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6CC81282552371200A08B90 /* qiita_access_token.json in Resources */,
 				B63EF222254ECC4A00919DCA /* LaunchScreen.storyboard in Resources */,
+				B62C91AA2557F88800821406 /* Items.storyboard in Resources */,
 				B63EF21F254ECC4A00919DCA /* Assets.xcassets in Resources */,
 				B6CC81232551B0DC00A08B90 /* Login.storyboard in Resources */,
 			);
@@ -392,11 +475,18 @@
 				B6CC81432552B91900A08B90 /* UserDefaults+.swift in Sources */,
 				N9S0AU91HR32XYRVMGD4BS9A /* LoginPresenter.swift in Sources */,
 				B63EF283254EF9E100919DCA /* AppRouter.swift in Sources */,
+				B62C91B02557F9E800821406 /* QiitaItemEntity.swift in Sources */,
 				U8CQ0YI1NI390G1CCSDY1AAS /* LoginViewController.swift in Sources */,
+				B6CC81532552FB9000A08B90 /* AccessTokenEntity.swift in Sources */,
 				V8MKNBTZOGZDA05RA00KLXPP /* LoginInteractor.swift in Sources */,
 				76EQ0JN3AWUFU1L1FHLPPFT0 /* LoginRouter.swift in Sources */,
+				B6CC81612553073900A08B90 /* AppInteractor.swift in Sources */,
 				B6CC812E25523A6700A08B90 /* API.swift in Sources */,
 				B63EF28B254EF9F500919DCA /* AppPresenter.swift in Sources */,
+				HSHWFSYZXSB661R8EWMPQEYA /* ItemsPresenter.swift in Sources */,
+				VM44NS6FJBWXZ0AKQV0EN3C0 /* ItemsViewController.swift in Sources */,
+				NIP67ZDWTINICHUAZ7C2L87W /* ItemsInteractor.swift in Sources */,
+				TO9GNAFF2ZPTPGDDLYBWW1ZJ /* ItemsRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +499,8 @@
 				PJBXWG51QVTTBIUZTSTIPB2O /* RootViewPresenterTests.swift in Sources */,
 				SARQ3RXF01UDNH69O36YJCZT /* LoginInteractorTests.swift in Sources */,
 				R495PMK1IGS6ZUH5XGM7677M /* LoginViewPresenterTests.swift in Sources */,
+				KM5MRR5NLYZOBSPD2QAUIYYL /* ItemsInteractorTests.swift in Sources */,
+				1DKUHFQC4KADKR05OLO9Z6GA /* ItemsViewPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -721,20 +813,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B6CC813525523C6B00A08B90 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		B62C919A2557E76500821406 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.3.0;
+				minimumVersion = 5.4.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B6CC813625523C6B00A08B90 /* Alamofire */ = {
+		B62C919B2557E76600821406 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B6CC813525523C6B00A08B90 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = B62C919A2557E76500821406 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
