@@ -67,7 +67,7 @@ extension API: APIClient {
       URLParameterName.code.rawValue: code
     ]
 
-    AF.request(url, method: .post, parameters: parameters).responseJSON { (response) in
+    AF.request(url, method: .post, parameters: parameters, encoding: URLEncoding(destination: .queryString)).responseJSON { (response) in
       do {
         guard
           let _data = response.data else {

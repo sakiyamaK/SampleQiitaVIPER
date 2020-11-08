@@ -19,16 +19,27 @@ final class AppPresenter {
   init(router: AppWireframe, interactor: AppUsecase) {
     self.router = router
     self.interactor = interactor
+    setupNotification()
+  }
+}
+
+private extension AppPresenter {
+  func setupNotification() {
+    NotificationCenter.default.addObserver(self, selector: #selector(reStart), name: .reStart, object: nil)
+  }
+
+  @objc func reStart() {
+    if interactor.isLogined {
+      router.showItemView()
+    } else {
+      router.showLoginView()
+    }
   }
 }
 
 extension AppPresenter: AppPresentation {
   func didFinishLaunch() {
-    if interactor.isLogined {
-      router.showItemView()
-    } else {
-      router.showStartView()
-    }
+    reStart()
   }
 
   func openURL(_ url: URL) -> Bool {
@@ -44,7 +55,7 @@ extension AppPresenter: AppPresentation {
       case .success(_):
         self?.router.showItemView()
       case .failure(_):
-        self?.router.showStartView()
+        self?.router.showLoginView()
       }
     }
     return true

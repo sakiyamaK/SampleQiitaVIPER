@@ -8,7 +8,7 @@
 import UIKit
 
 protocol AppWireframe: AnyObject {
-  func showStartView()
+  func showLoginView()
   func showItemView()
 }
 
@@ -28,6 +28,7 @@ final class AppRouter {
   }
 }
 
+
 extension AppRouter: AppWireframe {
   func showItemView() {
     let viewController = ItemsRouter.assembleModules()
@@ -36,7 +37,7 @@ extension AppRouter: AppWireframe {
     window.makeKeyAndVisible()
 
   }
-  func showStartView() {
+  func showLoginView() {
     let viewController = LoginRouter.assembleModules()
     window.rootViewController = viewController
     window.makeKeyAndVisible()

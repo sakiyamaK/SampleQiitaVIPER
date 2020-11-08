@@ -10,6 +10,7 @@ import Foundation
 
 protocol ItemsUsecase {
   func getAuthenticatedUserItems(completion: ((Result<[QiitaItemEntity], Error>) -> Void)?)
+  func remoteAccessToken()
 }
 
 final class ItemsInteractor {
@@ -22,5 +23,9 @@ final class ItemsInteractor {
 extension ItemsInteractor: ItemsUsecase {
   func getAuthenticatedUserItems(completion: ((Result<[QiitaItemEntity], Error>) -> Void)? = nil) {
     api.getAuthenticatedUserItems(completion: completion)
+  }
+
+  func remoteAccessToken() {
+    UserDefaults.standard.qiitaAccessToken = ""
   }
 }

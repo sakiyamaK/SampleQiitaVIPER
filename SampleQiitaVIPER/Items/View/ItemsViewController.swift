@@ -16,6 +16,12 @@ protocol ItemsView: AnyObject {
 final class ItemsViewController: UIViewController {
   var presenter: ItemsPresentation!
 
+  @IBOutlet private weak var logoutButton: UIButton! {
+    didSet {
+      logoutButton.addTarget(self, action: #selector(tapLogoutButton), for: .touchUpInside)
+    }
+  }
+
   private let cellID = "UITableViewCell"
   @IBOutlet private weak var tableView: UITableView! {
     didSet {
@@ -38,6 +44,12 @@ final class ItemsViewController: UIViewController {
     presenter.viewDidLoad()
     tableView.clearsContextBeforeDrawing = true
 
+  }
+}
+
+private extension ItemsViewController {
+  @objc func tapLogoutButton() {
+    presenter.tapLogoutButton()
   }
 }
 

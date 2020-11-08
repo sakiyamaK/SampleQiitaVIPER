@@ -11,6 +11,7 @@ import Foundation
 protocol ItemsPresentation: AnyObject {
   func viewDidLoad()
   func selectCell(item: QiitaItemEntity)
+  func tapLogoutButton()
 }
 
 final class ItemsPresenter {
@@ -47,6 +48,11 @@ extension ItemsPresenter: ItemsPresentation {
       return
     }
     router.showWeb(url: url)
+  }
+
+  func tapLogoutButton() {
+    interactor.remoteAccessToken()
+    router.showStart()
   }
 }
 

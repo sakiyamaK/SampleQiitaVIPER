@@ -10,6 +10,7 @@ import UIKit
 
 protocol ItemsWireframe: AnyObject {
   func showWeb(url: URL)
+  func showStart()
 }
 
 final class ItemsRouter {
@@ -39,5 +40,9 @@ extension ItemsRouter: ItemsWireframe {
   func showWeb(url: URL) {
     guard UIApplication.shared.canOpenURL(url) else { return }
     UIApplication.shared.open(url, options: [:], completionHandler: nil)
+  }
+
+  func showStart() {
+    NotificationCenter.default.post(name: .reStart, object: nil)
   }
 }
